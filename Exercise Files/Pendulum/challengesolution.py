@@ -7,8 +7,9 @@ import pendulum
 
 # First, let's figure out what day today is
 today = pendulum.today()
+# today = pendulum.datetime(2023, 1, 1)
 # Use the general format method to print the day and month
-print("Today is: {0}".format(today.format("dddd, MMMM Do")))
+print("Today is: {0}".format(today.format("dddd, MMMM Do YYYY")))
 
 # Next, create a date to represent International Clash Day
 # Which, of course, is February 7
@@ -25,4 +26,4 @@ if icd < today:
 
 # Now calculate the number of days until the next one
 time_to_afd = icd - today
-print("It's {0} days until Internation Clash Day!".format(time_to_afd.days))
+print("It's {0} days until the next Internation Clash Day!".format(time_to_afd.days))
