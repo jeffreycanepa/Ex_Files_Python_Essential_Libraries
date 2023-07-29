@@ -5,7 +5,7 @@ import time
 import pendulum
 
 # TODO: create a new datetime using pendulum
-
+myTime = pendulum.now()
 
 # TODO: convert the time to another time zone
 
