@@ -14,4 +14,4 @@ for image in images:
       filename, ext = os.path.splitext(fn)
       with Image.open(image) as imgfile:
         imgfile.thumbnail(thumbsize)
-        imgfile.save(myd + filename + ".thumb" + ext)
+        imgfile.save(myDir + filename + ".thumb" + ext)
